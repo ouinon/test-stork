@@ -1,3 +1,6 @@
+$stork-blue:#283A87;
+$error:#F4501E;
+
 h1{
 	font-size:4rem;
 	margin-bottom:2rem;
@@ -13,4 +16,12 @@ h3{
 h1,h2,h3{
 	text-align:center;
 	margin-bottom:3rem;
+}
+#maininput{
+	&.Invalid{
+		color:$error;
+	}
+	&.Look,&.Say{
+		color:$stork-blue;
+	}
 }

@@ -6,7 +6,7 @@ angular.module('storkApp')
 	// say [message]: player says [message] (to themselves)
 
 
-	var returnResult = function(message,className,revert){
+	var returnObject = function(message,className,revert){
 
 		var obj = {
 			// Using join(' ') to make the script a little more legible, rather than using a many '+' etc.
@@ -26,7 +26,7 @@ angular.module('storkApp')
 
 	  		var message = ['Alas you can\'t do that in this version of Stork, butter to try -',commands];
 
-	  		return returnResult(message,'Invalid',true);
+	  		return returnObject(message,'Invalid',true);
 
 	  	},
 	  	say: function(cmdArr){
@@ -35,7 +35,7 @@ angular.module('storkApp')
 
 	  		var message = [quote,'says you.'];
 
-	  		return returnResult(message,'Say',false);
+	  		return returnObject(message,'Say',false);
 
 	  	},
 	  	look: function(cmdArr){
@@ -49,7 +49,7 @@ angular.module('storkApp')
 
 	  			var itemsList = Object.keys(items).join(' or ');
 
-	  			var message = ['I can\'t see a', obj ,'in sight, try looking at -',itemsList];
+	  			var message = ['There isn\'t a', obj ,'in sight, try looking at -',itemsList];
 
 	  		}else{
 
@@ -60,7 +60,7 @@ angular.module('storkApp')
 
 	  		}
 
-  			return returnResult(message,className,false);
+  			return returnObject(message,className,false);
 
 	  	}
 	};

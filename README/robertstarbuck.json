@@ -1,0 +1,46 @@
+{
+	name: "Robert Starbuck",
+	github: "github.com/ouinon",
+	personal_website: "http://blog.ouinon.co",
+	relavent_social_media: [
+		"https://www.linkedin.com/in/robertstarbuck",
+		"http://web.cv/RobStarbuck"
+	],
+	skill_lists: {
+		major: [
+				{
+					name: "Javascript",
+					years_of_experience: 5
+				},
+				{
+					name: "AngularJS",
+					years_of_experience: 1
+				},
+				{
+					name: "Sass",
+					years_of_experience: 2
+				},
+				{
+					name: "JQuery",
+					years_of_experience: 5
+				},
+				{
+					name: "Apache",
+					years_of_experience: 5
+				},
+				{
+					name: "Grunt",
+					years_of_experience: 1
+				}
+			],
+			minor: [
+				"PHP",
+				"Neo4J",
+				"MySQL"
+			],
+			learning: [
+				"Python",
+				"Scala"
+			]
+		}
+}
