@@ -1,0 +1,14 @@
+{
+  "name": "affixalll",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular": "^1.4.5",
+    "angular-animate": "~1.4.5",
+    "angular-route": "~1.4.5"
+  },
+  "appPath": "app",
+  "moduleName": "storkApp",
+  "devDependencies": {
+    "angular-route": "~1.4.5"
+  }
+}

@@ -1,0 +1,32 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/stablegrid.css">
+
+  </head>
+  
+  <body ng-app="storkApp" ng-strict-di class="mg10r">
+
+    <h1>Stork App</h1>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="cte WdB">
+      <div ng-view=""></div>
+    </div>
+
+    <script src="scripts/vendor.js"></script>
+        <!-- {.tmp,app} are where the files might be found -->
+        <script src="scripts/scripts.js"></script>
+
+
+</body>
+</html>
