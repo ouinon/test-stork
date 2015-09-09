@@ -1,0 +1,38 @@
+<div class="cte WdB">
+
+  <h1 id="maininput" class="Center mg4r" ng-class="resultClass" ng-bind="response"></h1>
+
+  <div class="o-tbl">
+    <div class="tbl Auto Merge">
+      <div class="wd100p cll">
+		<!-- I wanted to use ng-pattern="{{validRegex}}" but it didn't work, every day's a school day. -->
+        <input o-input placeholder="Please enter a command" required ng-pattern="/^say|look/" ng-model-options="{allowInvalid:true}" ng-model="message"></input>
+
+      </div>
+      <div class="cll">
+        <button class="btn Icn m_hideB" ng-click="explore(message)">
+          <label>Explore</label>
+          <div class="icn">
+	        <i class="fa fa-arrow-right"></i>
+	      </div>
+        </button>
+        <!-- #RES Hack to be removed -->
+        &nbsp;
+      </div>
+    </div>
+
+    <div class="tbl">
+      <div class="cll">
+        <button class="btn Icn m_showB wd100p" ng-click="explore(message)">
+          <label>Explore</label>
+          <div class="icn">
+	        <i class="fa fa-arrow-right"></i>
+	      </div>
+        </button>
+        <!-- #RES Hack to be removed -->
+        &nbsp;
+      </div>
+    </div>
+  </div>
+
+</div>	

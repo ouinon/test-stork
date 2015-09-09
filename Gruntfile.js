@@ -100,6 +100,7 @@ module.exports = function(grunt) {
             // '*.{ico,png,txt}',
             //'.htaccess',
             '*.html',
+            'images/**',
             'views/{,*/}*.html',
             // 'templates/{,**/}*.*',
             // 'images/{,*/}*.{webp}',
@@ -123,16 +124,6 @@ module.exports = function(grunt) {
         files: {
           '<%= project_dirs.dist %>/styles/main.css': ['.tmp/styles/{,*/}*.css']
         }
-      }
-    },
-    ngAnnotate: {
-      dist: {
-        files: [{
-          expand: true,
-          cwd: 'scripts',
-          src: '{,**/}*.js',
-          dest: '.tmp/scripts'
-        }]
       }
     },
     uglify: {
@@ -185,7 +176,7 @@ module.exports = function(grunt) {
       html: ['<%= project_dirs.dist %>/{,*/}*.html'],
       css: ['<%= project_dirs.dist %>/styles/{,*/}*.css'],
       options: {
-        // assetsDirs: ['<%= project_dirs.dist %>']
+        assetsDirs: ['<%= project_dirs.dist %>']
       }
     },
 
@@ -216,7 +207,7 @@ module.exports = function(grunt) {
     'copy:dist',
     'usemin',
     // // 'concurrent:dist',
-    'ngAnnotate',
+    // 'ngAnnotate',
     // // 'cdnify',
     // 'processhtml',
     // 'clean:removetmp',
