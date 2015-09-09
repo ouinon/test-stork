@@ -1,2 +1,2 @@
 #!/bin/bash
-open -a "Google Chrome" http://local.stablegrid-lite.website/#/ & takana .
+open -a "Google Chrome" http://local.stork.website/#/ & takana .
